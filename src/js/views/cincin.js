@@ -64,7 +64,7 @@ module.exports = React.createClass({
     },
     playSound () {
         var media = new Media(
-            cordova.file.applicationDirectory + 'audio/catch-action.wav',
+            cordova.file.applicationDirectory + 'audio/beer.mp3',
             () => {
 
             },
