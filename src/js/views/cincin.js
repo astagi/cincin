@@ -8,7 +8,6 @@ module.exports = React.createClass({
     componentDidMount () {
         let watchID = navigator.accelerometer.watchAcceleration(
             (acceleration) => {
-                console.log("SUCCESS");
                 this.setState({
                     x: acceleration.x,
                     y: acceleration.y,
@@ -27,9 +26,7 @@ module.exports = React.createClass({
             () => {
                 alert("ERROR");
             },
-            {
-                frequency: 50
-            }
+            {frequency: 50}
         )
         this.setState({accWatchId: watchID});
     },
@@ -39,7 +36,7 @@ module.exports = React.createClass({
             x: 0,
             y: 0,
             z: 0,
-            width: 300,
+            width: 376,
             height: 100,
             done: false,
             popup: {
@@ -87,10 +84,30 @@ module.exports = React.createClass({
     render () {
         return (
             <Container>
-                <div><b>X: </b>{this.state.x}</div>
-                <div><b>Y: </b>{this.state.y}</div>
-                <div><b>Z: </b>{this.state.z}</div>
-                <div style={{width: this.state.width, height: this.state.height, background: "blue",borderRadius: `${this.state.width}px / ${this.state.height}px`}}></div>
+                <div style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    marginTop: "50px",
+                    backgroundColor: "green",
+                }}>
+                </div>
+                <div style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "150",
+                    backgroundColor: "red",
+                    borderRadius: `${this.state.width}px / ${this.state.height}px`
+                }}>
+                </div>
+                <div style={{
+                    position: "absolute",
+                    width: this.state.width,
+                    height: this.state.height,
+                    backgroundColor: "rgba(0, 0, 255, 0.85);",
+                    borderRadius: `${this.state.width}px / ${this.state.height}px`
+                }}>
+                </div>
 
                 <UI.Popup visible={this.state.popup.visible}>
                     <UI.PopupIcon name={this.state.popup.iconName} type={this.state.popup.iconType} />
