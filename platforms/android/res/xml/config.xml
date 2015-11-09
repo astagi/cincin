@@ -19,6 +19,14 @@
     <feature name="Accelerometer">
         <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
     <icon density="ldpi" src="resources/icons/iTunesArtwork@2x.png" />
     <icon density="mdpi" src="resources/icons/iTunesArtwork@2x.png" />
     <icon density="hdpi" src="resources/icons/iTunesArtwork@2x.png" />
