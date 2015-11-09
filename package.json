@@ -1,0 +1,48 @@
+{
+  "name": "cincin-app",
+  "version": "0.0.1",
+  "description": "CinCin app",
+  "main": "src/js/app.js",
+  "author": "Andrea Stagi",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astago/cincin.git"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "classnames": "^2.1.3",
+    "cordova-dialogs": "^1.0.2",
+    "httpify": "^2.0.0",
+    "react": "^0.13.3",
+    "react-container": "^0.2.4",
+    "react-sentry": "^1.0.2",
+    "react-tappable": "^0.6.0",
+    "react-timers": "^5.0.0",
+    "touchstonejs": "^0.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "happiness": "*",
+    "touchstonejs-tasks": "*"
+  },
+  "scripts": {
+    "build": "gulp clean && gulp build",
+    "build:production": "gulp clean && NODE_ENV=production gulp build",
+    "lint": "happiness",
+    "prepare": "gulp clean && gulp prepare",
+    "prepare:production": "gulp clean && NODE_ENV=production gulp prepare",
+    "test": "npm run lint",
+    "start": "gulp clean && gulp dev",
+    "watch": "gulp clean && gulp watch"
+  },
+  "happiness": {
+    "ignore": [
+      "platforms",
+      "plugins",
+      "src/data",
+      "www"
+    ]
+  }
+}

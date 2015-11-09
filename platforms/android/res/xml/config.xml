@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.thinkmill.touchstonejs-starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <icon density="ldpi" src="resources/icons/iTunesArtwork@2x.png" />
+    <icon density="mdpi" src="resources/icons/iTunesArtwork@2x.png" />
+    <icon density="hdpi" src="resources/icons/iTunesArtwork@2x.png" />
+    <icon density="xhdpi" src="resources/icons/iTunesArtwork@2x.png" />
+    <splash density="ldpi" src="resources/splash/1242x2208.png" />
+    <splash density="mdpi" src="resources/splash/1242x2208.png" />
+    <splash density="hdpi" src="resources/splash/1242x2208.png" />
+    <splash density="xhdpi" src="resources/splash/1242x2208.png" />
+    <name>Touchstone</name>
+    <description>
+		Touchstone Starter App
+	</description>
+    <author email="hello@thinkmill.com.au" href="http://www.thinkmill.com.au">
+		Thinkmill Team
+	</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+</widget>
