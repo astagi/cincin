@@ -89,14 +89,14 @@ module.exports = React.createClass({
                     width: "100%",
                     height: "100%",
                     marginTop: "50px",
-                    backgroundColor: "green",
+                    backgroundColor: "rgba(255, 200, 11, 0.85);",
                 }}>
                 </div>
                 <div style={{
                     position: "absolute",
                     width: "100%",
                     height: "150",
-                    backgroundColor: "red",
+                    backgroundColor: "#f6f5f2",
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>
                 </div>
@@ -104,7 +104,7 @@ module.exports = React.createClass({
                     position: "absolute",
                     width: this.state.width,
                     height: this.state.height,
-                    backgroundColor: "rgba(0, 0, 255, 0.85);",
+                    backgroundColor: "#f6edd3",
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>
                 </div>
