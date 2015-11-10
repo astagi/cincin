@@ -8,12 +8,7 @@ module.exports = React.createClass({
     componentDidMount () {
         let watchID = navigator.accelerometer.watchAcceleration(
             (acceleration) => {
-                this.setState({
-                    x: acceleration.x,
-                    y: acceleration.y,
-                    z: acceleration.z,
-                });
-                this.setState({height: (acceleration.z < 0 ? acceleration.z * - 1 : acceleration.z) * 10});
+                this.setState({height: (acceleration.z < 0 ? 1 : acceleration.z) * 10});
                 if (acceleration.z > 6.0 && !this.state.done) {
                     this.setState({done: true});
                     this.playSound();
