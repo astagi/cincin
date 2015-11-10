@@ -49,7 +49,6 @@ var MainViewController = React.createClass({
 	render () {
 		return (
 			<Container>
-				<UI.NavigationBar name="main" />
 				<ViewManager name="main" defaultView="tabs">
 					<View name="tabs" component={TabViewController} />
 				</ViewManager>
