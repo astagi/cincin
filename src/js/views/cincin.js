@@ -36,7 +36,7 @@ module.exports = React.createClass({
             x: 0,
             y: 0,
             z: 0,
-            width: 376,
+            width: window.screen.width,
             height: 100,
             done: false,
             popup: {
