@@ -2,6 +2,7 @@ import Container from 'react-container';
 import React from 'react';
 import { Link, UI } from 'touchstonejs';
 import Timers from 'react-timers';
+import getBarStore from '../stores/barstore'
 
 module.exports = React.createClass({
     mixins: [Timers],
@@ -26,6 +27,14 @@ module.exports = React.createClass({
         this.setState({accWatchId: watchID});
     },
     getInitialState () {
+        let selectedGlass = localStorage.getItem("selectedGlass") || 'pint';
+        let selectedBeverage = localStorage.getItem("selectedBeverage") || 'beer';
+
+        let barStore = getBarStore();
+
+        selectedBeverage = barStore['beverages'][selectedBeverage];
+        selectedGlass = barStore['glasses'][selectedGlass];
+
         return {
             accWatchId: undefined,
             x: 0,
@@ -36,7 +45,9 @@ module.exports = React.createClass({
             done: false,
             popup: {
                 visible: false
-            }
+            },
+            beverage: selectedBeverage,
+            glass: selectedGlass
         };
     },
     showCheersPopup () {
@@ -59,7 +70,7 @@ module.exports = React.createClass({
     },
     playSound () {
         var media = new Media(
-            cordova.file.applicationDirectory + 'audio/beer.mp3',
+            cordova.file.applicationDirectory + 'audio/' + this.state.glass.sound,
             () => {
 
             },
@@ -84,14 +95,14 @@ module.exports = React.createClass({
                     width: "100%",
                     height: "100%",
                     marginTop: "50px",
-                    backgroundColor: "rgba(255, 200, 11, 0.85);",
+                    backgroundColor: this.state.beverage.color,
                 }}>
                 </div>
                 <div style={{
                     position: "absolute",
                     width: "100%",
                     height: "150",
-                    backgroundColor: "#f6f5f2",
+                    backgroundColor: this.state.beverage.foam || this.state.beverage.color,
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>
                 </div>
@@ -99,7 +110,7 @@ module.exports = React.createClass({
                     position: "absolute",
                     width: this.state.width,
                     height: this.state.height,
-                    backgroundColor: "#f6edd3",
+                    backgroundColor: this.state.beverage.topColor,
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>
                 </div>
