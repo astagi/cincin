@@ -50,7 +50,7 @@ module.exports = React.createClass({
 						{ label: 'Beer', value: 'beer' },
 						{ label: 'Champagne', value: 'champagne' },
 						{ label: 'Cocktail', value: 'cocktail' },
-						{ label: 'Assenzio', value: 'assenzio' }
+						{ label: 'Absinthe', value: 'absinthe' }
 					]} />
 				</UI.Group>
 

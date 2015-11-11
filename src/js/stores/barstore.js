@@ -16,7 +16,7 @@ function getBarStore () {
                 topColor: '',
                 foam: ''
             },
-            assenzio: {
+            absinthe: {
                 color: '#3dc319',
                 topColor: '#65e144',
             },
