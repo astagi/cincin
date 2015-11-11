@@ -60,7 +60,7 @@ var MainViewController = React.createClass({
 // Tab Controller
 // ------------------------------
 
-var lastSelectedTab = 'lists'
+var lastSelectedTab = 'cincin'
 var TabViewController = React.createClass({
 	getInitialState () {
 		return {
@@ -93,8 +93,8 @@ var TabViewController = React.createClass({
 		let selectedTab = this.state.selectedTab
 		let selectedTabSpan = selectedTab
 
-		if (selectedTab === 'lists' || selectedTab === 'list-simple' || selectedTab === 'list-complex' || selectedTab === 'list-details') {
-			selectedTabSpan = 'lists';
+		if (selectedTab === 'cincin' || selectedTab === 'list-simple' || selectedTab === 'list-complex' || selectedTab === 'list-details') {
+			selectedTabSpan = 'cincin';
 		}
 
 		if (selectedTab === 'transitions' || selectedTab === 'transitions-target') {
@@ -104,13 +104,13 @@ var TabViewController = React.createClass({
 		return (
 			<Container>
 				<ViewManager ref="vm" name="tabs" defaultView={selectedTab} onViewChange={this.onViewChange}>
-					<View name="lists" component={require('./views/cincin')} />
+					<View name="cincin" component={require('./views/cincin')} />
 					<View name="controls" component={require('./views/controls')} />
 				</ViewManager>
 				<UI.Tabs.Navigator>
-					<UI.Tabs.Tab onTap={this.selectTab.bind(this, 'lists')} selected={selectedTabSpan === 'lists'}>
-						<span className="Tabs-Icon Tabs-Icon--lists" />
-						<UI.Tabs.Label>Lists</UI.Tabs.Label>
+					<UI.Tabs.Tab onTap={this.selectTab.bind(this, 'cincin')} selected={selectedTabSpan === 'cincin'}>
+						<span className="Tabs-Icon Tabs-Icon--cincin" />
+						<UI.Tabs.Label>Cheers!</UI.Tabs.Label>
 					</UI.Tabs.Tab>
 					<UI.Tabs.Tab onTap={this.selectTab.bind(this, 'controls')} selected={selectedTabSpan === 'controls'}>
 						<span className="Tabs-Icon Tabs-Icon--controls" />
