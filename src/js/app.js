@@ -10,21 +10,8 @@ import {
 // App Config
 // ------------------------------
 
-const PeopleStore = require('./stores/people')
-const peopleStore = new PeopleStore()
-
 var App = React.createClass({
 	mixins: [createApp()],
-
-	childContextTypes: {
-		peopleStore: React.PropTypes.object
-	},
-
-	getChildContext () {
-		return {
-			peopleStore: peopleStore
-		};
-	},
 
 	render () {
 		let appWrapperClassName = 'app-wrapper device--' + (window.device || {}).platform
