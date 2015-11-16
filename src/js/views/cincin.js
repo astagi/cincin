@@ -94,7 +94,7 @@ module.exports = React.createClass({
                     position: "absolute",
                     width: "100%",
                     height: "100%",
-                    marginTop: "50px",
+                    marginTop: (300 - this.state.glass.height) + 50,
                     backgroundColor: this.state.beverage.color,
                 }}>
                 </div>
@@ -102,6 +102,7 @@ module.exports = React.createClass({
                     position: "absolute",
                     width: "100%",
                     height: "150",
+                    marginTop: (300 - this.state.glass.height),
                     backgroundColor: this.state.beverage.foam || this.state.beverage.color,
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>
@@ -110,6 +111,7 @@ module.exports = React.createClass({
                     position: "absolute",
                     width: this.state.width,
                     height: this.state.height,
+                    marginTop: (300 - this.state.glass.height),
                     backgroundColor: this.state.beverage.topColor,
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
                 }}>

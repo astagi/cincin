@@ -24,12 +24,15 @@ function getBarStore () {
         glasses : {
             pint: {
                 sound: 'beer.mp3',
+                height: 300,
             },
             chalice: {
                 sound: 'chalice.mp3',
+                height: 200,
             },
             glass: {
                 sound: 'cup.mp3',
+                height: 100,
             },
         },
     }
