@@ -7,16 +7,12 @@ function getBarStore () {
                 foam: '#f6f5f2'
             },
             champagne: {
-                color: '',
-                topColor: '',
-                foam: ''
+                color: '#f6edd3',
+                topColor: '#f6edd3',
+                foam: '#f6f5f2',
+                foamHeight: '20px'
             },
             cocktail: {
-                color: '',
-                topColor: '',
-                foam: ''
-            },
-            absinthe: {
                 color: '#3dc319',
                 topColor: '#65e144',
             },
