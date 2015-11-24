@@ -37,6 +37,7 @@ xcuserdata
 DerivedData
 
 # Android
+.gradle
 build.xml
 local.properties
 gradlew
