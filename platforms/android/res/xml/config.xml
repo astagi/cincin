@@ -8,10 +8,6 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="StatusBar">
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
@@ -27,26 +23,19 @@
         <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
     </feature>
     <preference name="AndroidPersistentFileLocation" value="Internal" />
-    <icon density="ldpi" src="resources/icons/iTunesArtwork@2x.png" />
-    <icon density="mdpi" src="resources/icons/iTunesArtwork@2x.png" />
-    <icon density="hdpi" src="resources/icons/iTunesArtwork@2x.png" />
-    <icon density="xhdpi" src="resources/icons/iTunesArtwork@2x.png" />
-    <splash density="ldpi" src="resources/splash/1242x2208.png" />
-    <splash density="mdpi" src="resources/splash/1242x2208.png" />
-    <splash density="hdpi" src="resources/splash/1242x2208.png" />
-    <splash density="xhdpi" src="resources/splash/1242x2208.png" />
-    <name>Touchstone</name>
+    <icon density="ldpi" src="resources/icons/Icon-Small@3x.png" />
+    <icon density="mdpi" src="resources/icons/Icon-Small@2x.png" />
+    <icon density="hdpi" src="resources/icons/Icon-76@2x.png" />
+    <icon density="xhdpi" src="resources/icons/Icon-76@2x.png" />
+    <name>CinCin!</name>
     <description>
-		Touchstone Starter App
+		Cincin app made with TouchstoneJS
 	</description>
-    <author email="hello@thinkmill.com.au" href="http://www.thinkmill.com.au">
-		Thinkmill Team
+    <author email="stagi.andrea@gmail.com" href="https://github.com/astagi">
+		Andrea Stagi
 	</author>
     <content src="index.html" />
     <access origin="*" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="10000" />
-    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="orientation" value="portrait" />
 </widget>

@@ -18,10 +18,10 @@
 
 	<!-- ANDROID -->
 	<platform name="android">
-		<icon src="resources/icons/iTunesArtwork@2x.png" density="ldpi" />
-		<icon src="resources/icons/iTunesArtwork@2x.png" density="mdpi" />
-		<icon src="resources/icons/iTunesArtwork@2x.png" density="hdpi" />
-		<icon src="resources/icons/iTunesArtwork@2x.png" density="xhdpi" />
+		<icon src="resources/icons/Icon-Small@3x.png" density="ldpi" />
+		<icon src="resources/icons/Icon-Small@2x.png" density="mdpi" />
+		<icon src="resources/icons/Icon-76@2x.png" density="hdpi" />
+		<icon src="resources/icons/Icon-76@2x.png" density="xhdpi" />
 	</platform>
 
 	<!-- IOS -->
@@ -30,7 +30,6 @@
 
 	<!-- PLUGINS -->
 	<plugin name="cordova-plugin-device" spec="^1.0.0" />
-	<plugin name="cordova-plugin-splashscreen" spec="^2.0.0" />
 	<plugin name="cordova-plugin-statusbar" spec="^1.0.0" />
 	<plugin name="cordova-plugin-whitelist" spec="^1.1.0" />
 </widget>
