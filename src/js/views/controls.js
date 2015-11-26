@@ -61,6 +61,15 @@ module.exports = React.createClass({
 						{ label: 'Glass', value: 'glass' },
 					]} />
 				</UI.Group>
+
+				<UI.Group hasTopGutter>
+					<UI.GroupHeader>Credits</UI.GroupHeader>
+					<UI.GroupInner>
+					<p>CinCin is an app ideated by <b>Federica Catalani</b> and developed by <b>Andrea Stagi</b>, born during an abstemious night.</p>
+					<p>Drink responsibly! Code and graphics improvements are coming soon :P </p>
+					<p>Released under MIT License, source code available on Github</p>
+					</UI.GroupInner>
+				</UI.Group>
 			</Container>
 		);
 	}
