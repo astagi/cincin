@@ -101,7 +101,7 @@ module.exports = React.createClass({
                 <div style={{
                     position: "absolute",
                     width: "100%",
-                    height: "150px" || this.state.beverage.foamHeight,
+                    height: "150px",
                     marginTop: (300 - this.state.glass.height),
                     backgroundColor: this.state.beverage.foam || this.state.beverage.color,
                     borderRadius: `${this.state.width}px / ${this.state.height}px`
