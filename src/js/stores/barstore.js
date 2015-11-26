@@ -8,13 +8,12 @@ function getBarStore () {
             },
             champagne: {
                 color: '#f6edd3',
-                topColor: '#f6edd3',
-                foam: '#f6f5f2',
-                foamHeight: '20px'
+                topColor: '#fff9e9',
             },
             cocktail: {
-                color: '#3dc319',
-                topColor: '#65e144',
+                color: '#bd2c00',
+                topColor: '#772309',
+                foam: '#f47215'
             },
         },
         glasses : {
