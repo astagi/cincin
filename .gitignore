@@ -37,6 +37,9 @@ xcuserdata
 DerivedData
 
 # Android
+*.keystore
+*.apk
+release.sh
 .gradle
 build.xml
 local.properties
