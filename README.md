@@ -3,4 +3,4 @@ CinCin app
 
 # License
 
-MIT. Copyright (c) 2015 Andrea Stagi
+MIT. Copyright (c) 2015 F.Catalani, A.Stagi
